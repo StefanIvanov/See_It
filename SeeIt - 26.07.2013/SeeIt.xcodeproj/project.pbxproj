@@ -43,6 +43,7 @@
 		C0E5FA98179FA4C6008A2264 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E5FA97179FA4C6008A2264 /* CoreLocation.framework */; };
 		C0E7AD3C17A1737800F87AAA /* pinpsdSOFIA.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E7AD3B17A1737800F87AAA /* pinpsdSOFIA.png */; };
 		C0E7AD3E17A1742300F87AAA /* background-iphone3.png in Resources */ = {isa = PBXBuildFile; fileRef = C0E7AD3D17A1742300F87AAA /* background-iphone3.png */; };
+		C0E7AD4017A1B76900F87AAA /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E7AD3F17A1B76900F87AAA /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,7 @@
 		C0E5FA97179FA4C6008A2264 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C0E7AD3B17A1737800F87AAA /* pinpsdSOFIA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinpsdSOFIA.png; sourceTree = "<group>"; };
 		C0E7AD3D17A1742300F87AAA /* background-iphone3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-iphone3.png"; sourceTree = "<group>"; };
+		C0E7AD3F17A1B76900F87AAA /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E7AD4017A1B76900F87AAA /* FacebookSDK.framework in Frameworks */,
 				C0E5FA98179FA4C6008A2264 /* CoreLocation.framework in Frameworks */,
 				C09AF990179E7A1D00B17814 /* UIKit.framework in Frameworks */,
 				C09AF992179E7A1D00B17814 /* Foundation.framework in Frameworks */,
@@ -171,6 +174,7 @@
 		C09AF98E179E7A1D00B17814 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0E7AD3F17A1B76900F87AAA /* FacebookSDK.framework */,
 				C07BCEBE17A0F7C700CD2041 /* JSON */,
 				C0E5FA97179FA4C6008A2264 /* CoreLocation.framework */,
 				C09AF98F179E7A1D00B17814 /* UIKit.framework */,
@@ -455,6 +459,10 @@
 		C09AF9B0179E7A1D00B17814 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Documents/FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SeeIt/SeeIt-Prefix.pch";
 				INFOPLIST_FILE = "SeeIt/SeeIt-Info.plist";
@@ -466,6 +474,10 @@
 		C09AF9B1179E7A1D00B17814 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Documents/FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SeeIt/SeeIt-Prefix.pch";
 				INFOPLIST_FILE = "SeeIt/SeeIt-Info.plist";
